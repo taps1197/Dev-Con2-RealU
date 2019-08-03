@@ -1,0 +1,106 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="/w3css/3/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+
+        <title>Face Recognition</title>
+        <style>
+        .btn {
+            background-color: DodgerBlue;
+            border: none;
+            color: white;
+            padding: 12px 16px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        /* Darker background on mouse-over */
+        .btn:hover {
+            background-color: RoyalBlue;
+        }
+        table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+        }
+
+        td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+        }
+
+        tr:nth-child(even) {
+        background-color: #dddddd;
+        }
+        </style>
+
+    </head>
+    <body>
+        <nav class="w3-bar w3-black">
+        <button class="btn"><i class="fa fa-home"></i> Home</button>
+        <button class="btn"><i class="fa fa-phone"></i> Contact us</button>
+        </nav>
+
+        <div>
+            <section class="w3-container w3-center w3-content" style="max-width:600px">
+              <div text align="center"><b><h2 class="w3-wide">DEAR VOTER</h2></div></b>
+              <div text align="center"><b><h2 class="w3-opacity"><i><p>SCAN FACE FOR </i></h2></div></b>
+    </div>
+
+        <video id='vd'></video>
+        <button id='verifyFace'>Verify</button>
+        <!-- <button id='detectFaces'>Detect</button>
+        <button id='clickPic'>Enroll</button>
+            <button id='stop'>Stop</button> -->
+        <canvas id='canv' width='400px' height='400px' style='display:none;'></canvas>
+        <script src='assets/js/util.js'></script>
+        <script src='assets/js/actions.js'></script>
+        <script src='assets/js/index.js'></script>
+
+        <h2>Cast Your Vote</h2>
+
+<table>
+        <tr>
+                        <th>S.No</th>
+                        <th>Party Name</th>
+                        <th>Candidate's Name</th>
+
+        </tr>
+        <tr>
+                        <td>1.</td>
+                        <td>BJP</td>
+                        <td>Sudha shyam</td>
+
+        </tr>
+        <tr>
+                        <td>2.</td>
+                        <td>Congress</td>
+                        <td>Maya sharma</td>
+
+        </tr>
+        <tr>
+                        <td>3.</td>
+                        <td>AAP</td>
+                        <td>Hetal Patel</td>
+
+        </tr>
+        <tr>
+                        <td>4.</td>
+                        <td>BSP</td>
+                        <td>Shaurya Malhotra</td>
+        </tr>
+</table>
+    </body>
+    <input type="number" style="top:10px ;" name="Vote" placeholder="S.no of Party">
+<a href="thanks.html"><button class="w3-button w3-padding-large w3-light-grey" style="margin-top:10px ; bottom:100px; right:100px ; text-align: center; margin: 10px auto">Cast a Vote</button>
+    <!-- <input type="text" ></input>
+    <button -->
+
+    </html>
