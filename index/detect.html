@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- awesone fonts css-->
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+    <!-- owl carousel css--> 
+    <link rel="stylesheet" href="owl-carousel/assets/owl.carousel.min.css" type="text/css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>realU the real identity of a person</title>
+    <style>
+        *,
+        *::after,
+        *::before{
+            margin:0;
+            padding: 0;
+            box-sizing: inherit;
+        }
+
+        html{
+            font-size: 62.5%;
+        }
+
+        body{
+            font-family: "Lato",sans-serif;
+            font-weight: 400;
+            /* font-size: 16px; */
+            line-height: 1.7;
+            /* color:$color-grey-dark; */
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+        #heading_1{
+            text-align: center;
+            font-size: 5rem;
+            position: relative;
+            /* text-transform: tcase; */
+            background-image: linear-gradient(to right,rgba(47, 0, 255, 0.8),rgba(0, 238, 255, 0.32));
+            letter-spacing: .8rem;
+            color: white;
+            width:100vw;
+            height:18vh;
+            padding:1.5rem;
+            /* background-color: linear-gradient(to right bottom,red,orange); */
+        }
+        #heading_2{
+            text-align: center;
+            font-size: 1.75rem;
+            font-weight:400;
+            margin-top: 1.5rem;
+        }
+        .card-img-left{
+            position:absolute;
+            top:4rem;
+            right:5rem;
+           margin-left:5rem;
+           /* transform:translateY(1.5rem); */
+        }
+        
+
+        #vd{
+            display: inline-block;
+            border-radius: 100%;
+            /* margin-left: 50vw; */
+            width: 27.5vw;
+            z-index:100;
+            /* transform: translateY(0.5rem); */
+            /* width:30vw;
+            height: auto; */
+        }
+    
+        #container {
+        transform: translateY(-3rem);
+        height:80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+    }
+ 
+    .circle {
+      border-radius: 50%;
+      background-color: rgba(73, 196, 226, 0.8);
+      width: 45rem;
+      height: 45rem;
+      /* height: 150px; */
+      position: absolute;
+      opacity: 0;
+      animation: scaleIn 4s infinite cubic-bezier(.36, .11, .89, .32);
+    }
+ 
+        @keyframes scaleIn {
+    from {
+        transform: scale(.5, .5);
+        opacity: .5;
+    }
+    to {
+        transform: scale(2.5, 2.5);
+        opacity: 0;
+    }
+    }
+
+    #verifyFace{
+        transform:translateY(-10rem);
+    }
+    
+    </style>
+</head>
+<body>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light bg-transparent" id="gtco-main-nav"> -->
+        <!-- <div class="container"> -->
+            <!-- <button class="navbar-toggler" data-target="#my-nav" onclick="myFunction(this)" data-toggle="collapse"><span -->
+                    <!-- class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span></button> -->
+
+        <!-- </div> -->
+    <!-- </nav> -->
+    <p id="heading_1">Payment Verification Page<img class="card-img-left logo" src="assets/images/logo.png" alt="realU"></p>
+    <p id="heading_2">Please Stand in Mid of Camera while payment is processing...</p>
+
+    <div id="container">
+            <video id='vd'></video>
+            <!-- <img id="item" src="https://www.kirupa.com/images/orange.png" /> -->
+            <div class="circle" style="animation-delay: -3s"></div>
+            <div class="circle" style="animation-delay: -2s"></div>
+            <div class="circle" style="animation-delay: -1s"></div>
+            <div class="circle" style="animation-delay: 0s"></div>
+    </div>
+      
+    
+    <br>
+    <button id='clickPic'>Enroll</button>
+    <button id='detectFaces'>Detect</button>
+    <button id='verifyFace'>Verify</button>
+    <button id='stop'>Stop</button>
+    <canvas id='canv' width='400px' height='400px' style='display:none;'></canvas>
+    <script src='assets/js/util.js'></script>
+    <script src='assets/js/actions.js'></script>
+    <script src='assets/js/index.js'></script>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery-3.3.1.slim.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- owl carousel js-->
+<script src="owl-carousel/owl.carousel.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+
